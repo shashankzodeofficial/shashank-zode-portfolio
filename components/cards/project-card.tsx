@@ -57,7 +57,7 @@ export function ProjectCard({
         </p>
 
         <Link
-          href="/projects"
+          href={`/projects/${project.slug}`}
           className="text-brand group/link mt-auto inline-flex w-fit items-center gap-1.5 text-sm font-semibold"
         >
           View Case Study

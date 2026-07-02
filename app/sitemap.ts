@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { caseStudies } from "@/content/projects";
 import { siteConfig } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -28,7 +29,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteConfig.url}/projects`,
       lastModified,
       changeFrequency: "weekly",
-      priority: 0.6,
+      priority: 0.9,
     },
+    ...caseStudies.map((study) => ({
+      url: `${siteConfig.url}/projects/${study.slug}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
   ];
 }
