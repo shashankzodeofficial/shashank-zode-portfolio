@@ -1,0 +1,175 @@
+import {
+  AlertTriangle,
+  BarChart3,
+  Bot,
+  Brain,
+  ClipboardCheck,
+  Cpu,
+  FileSearch,
+  FlaskConical,
+  Gauge,
+  ListTree,
+  Milestone,
+  Network,
+  Repeat,
+  Scale,
+  ShieldCheck,
+  Target,
+  TrendingUp,
+  Warehouse,
+} from "lucide-react";
+
+import type { Framework } from "@/types/knowledge";
+
+export const frameworks: Framework[] = [
+  {
+    slug: "warehouse-excellence-framework",
+    title: "Warehouse Excellence Framework",
+    category: "Warehouse Operations",
+    description:
+      "A four-stage model for taking a warehouse from inconsistent execution to sustained operational excellence.",
+    whenToUse: "Standardizing processes across a facility, or preparing a facility to scale.",
+    icon: Warehouse,
+    steps: {
+      title: "Assess → Standardize → Automate → Sustain",
+      description: "Each stage builds on the last — automation without a standardized process just scales inconsistency faster.",
+      nodes: [
+        { icon: FileSearch, label: "Assess", detail: "Baseline current process and safety performance" },
+        { icon: ClipboardCheck, label: "Standardize", detail: "Document and train to one process" },
+        { icon: Bot, label: "Automate", detail: "Apply technology to the standardized process" },
+        { icon: Repeat, label: "Sustain", detail: "Monitor, audit, and refine continuously" },
+      ],
+    },
+    outcomes: [
+      "Consistent throughput across shifts and teams",
+      "Lower safety incident rates",
+      "Faster new-hire ramp-up",
+      "A repeatable model for new facilities",
+    ],
+  },
+  {
+    slug: "network-design-cost-optimization-framework",
+    title: "Network Design & Cost Optimization Framework",
+    category: "Logistics",
+    description: "A structured approach to mapping, scoring, and simplifying a multi-node logistics network.",
+    whenToUse: "Transportation costs rising faster than volume, or elevated loss/damage rates.",
+    icon: Network,
+    steps: {
+      title: "Map → Score → Consolidate → Govern",
+      description: "Network simplification is a governance discipline, not a one-time project.",
+      nodes: [
+        { icon: ListTree, label: "Map", detail: "Inventory every active connection" },
+        { icon: Scale, label: "Score", detail: "Evaluate cost, volume, and ownership" },
+        { icon: Repeat, label: "Consolidate", detail: "Merge or remove redundant routes" },
+        { icon: ClipboardCheck, label: "Govern", detail: "Institute recurring review" },
+      ],
+    },
+    outcomes: [
+      "Lower transportation cost per shipment",
+      "Reduced loss and damage exposure",
+      "Clearer route ownership",
+      "A repeatable network review cadence",
+    ],
+  },
+  {
+    slug: "supply-chain-digital-transformation-roadmap",
+    title: "Supply Chain Digital Transformation Roadmap",
+    category: "Digital Transformation",
+    description:
+      "A phased model for moving a supply chain organization from manual, spreadsheet-driven processes to a connected digital operating model.",
+    whenToUse: "Planning a multi-quarter digital transformation program.",
+    icon: Cpu,
+    steps: {
+      title: "Discover → Pilot → Scale → Govern",
+      description: "Digital transformation succeeds when it's sequenced around proven pilots, not a big-bang rollout.",
+      nodes: [
+        { icon: FileSearch, label: "Discover", detail: "Map manual workflows and pain points" },
+        { icon: FlaskConical, label: "Pilot", detail: "Digitize one high-value workflow first" },
+        { icon: TrendingUp, label: "Scale", detail: "Extend proven pilots across the organization" },
+        { icon: ClipboardCheck, label: "Govern", detail: "Establish ownership and continuous iteration" },
+      ],
+    },
+    outcomes: [
+      "Reduced manual reporting effort",
+      "Faster, more reliable decision-making",
+      "A prioritized digital roadmap",
+      "Higher organizational digital fluency",
+    ],
+  },
+  {
+    slug: "ai-adoption-framework-for-operations",
+    title: "AI Adoption Framework for Operations",
+    category: "AI",
+    description: "A disciplined model for scoping, piloting, and scaling AI initiatives around real operational decisions.",
+    whenToUse: "Before greenlighting any new AI pilot.",
+    icon: Brain,
+    steps: {
+      title: "Identify → Assess → Pilot → Scale → Govern",
+      description: "The decision comes first; the technology comes second.",
+      nodes: [
+        { icon: FileSearch, label: "Identify", detail: "Name the specific decision to improve" },
+        { icon: Gauge, label: "Assess", detail: "Confirm data readiness" },
+        { icon: FlaskConical, label: "Pilot", detail: "Test narrowly with a clear metric" },
+        { icon: TrendingUp, label: "Scale", detail: "Expand only what's proven" },
+        { icon: Repeat, label: "Govern", detail: "Monitor and retrain over time" },
+      ],
+    },
+    outcomes: [
+      "Higher pilot-to-scale conversion rate",
+      "Reduced wasted AI investment",
+      "Improved decision quality",
+      "Stronger team trust in AI tools",
+    ],
+  },
+  {
+    slug: "operations-excellence-framework",
+    title: "Operations Excellence Framework",
+    category: "Operations Excellence",
+    description: "A Lean Six Sigma-grounded model for diagnosing and permanently resolving recurring operational problems.",
+    whenToUse: "Chronic, recurring problems where root cause isn't yet clear.",
+    icon: Target,
+    steps: {
+      title: "Define → Measure → Analyze → Improve → Control",
+      description: "The classic DMAIC cycle, applied to operational rather than manufacturing defects.",
+      nodes: [
+        { icon: FileSearch, label: "Define", detail: "Frame the problem and goal precisely" },
+        { icon: Gauge, label: "Measure", detail: "Baseline current performance" },
+        { icon: BarChart3, label: "Analyze", detail: "Find root cause, not symptoms" },
+        { icon: TrendingUp, label: "Improve", detail: "Test and implement a fix" },
+        { icon: ShieldCheck, label: "Control", detail: "Lock in the gain with a control plan" },
+      ],
+    },
+    outcomes: [
+      "Root-cause resolution instead of recurring firefighting",
+      "Measurable, sustained performance gains",
+      "A documented control plan",
+      "A repeatable problem-solving discipline across teams",
+    ],
+  },
+  {
+    slug: "peak-readiness-risk-framework",
+    title: "Peak-Readiness & Risk Framework",
+    category: "Operations Excellence",
+    description:
+      "A framework for stress-testing operations ahead of a major seasonal or demand peak, and structuring any high-stakes changes needed to prepare.",
+    whenToUse: "The quarter leading into a known seasonal or demand peak.",
+    icon: AlertTriangle,
+    steps: {
+      title: "Identify → Weigh → Build Contingency → Checkpoint → Review",
+      description: "The structure that turns a high-stakes bet into a calculated risk.",
+      nodes: [
+        { icon: FileSearch, label: "Identify Constraints", detail: "Find capacity bottlenecks ahead of peak" },
+        { icon: Scale, label: "Weigh the Risk", detail: "Compare cost of action vs. inaction" },
+        { icon: ShieldCheck, label: "Build Contingency", detail: "Design fallback capacity" },
+        { icon: Milestone, label: "Set Checkpoints", detail: "Define go/no-go decision points" },
+        { icon: Repeat, label: "Review Post-Peak", detail: "Capture lessons regardless of outcome" },
+      ],
+    },
+    outcomes: [
+      "Reduced risk of peak-season service failure",
+      "Faster go/no-go decision-making under pressure",
+      "Stronger team confidence in high-stakes calls",
+      "A reusable playbook for future peak cycles",
+    ],
+  },
+];
