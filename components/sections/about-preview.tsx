@@ -1,10 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 import { SectionHeader } from "@/components/common/section-header";
+import { joyPhoto } from "@/lib/media";
 
 const paragraphs = [
   "I've spent 16 years in the parts of the business most executives never see — the sort floor at 2 a.m., the loading dock during a supply shock, the spreadsheet that quietly decides whether 600,000 packages move on time. That's where I learned that supply chains aren't won in strategy decks; they're won in the details of what actually happens on the ground.",
@@ -36,13 +38,35 @@ export function AboutPreview() {
             </motion.p>
           ))}
 
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10% 0px" }}
+            transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="border-border bg-surface flex w-fit items-center gap-4 rounded-2xl border p-3"
+          >
+            <div className="relative size-16 shrink-0 overflow-hidden rounded-xl">
+              <Image
+                src={joyPhoto.src}
+                alt={joyPhoto.alt}
+                fill
+                sizes="4rem"
+                className="object-cover"
+              />
+            </div>
+            <p className="text-muted-foreground max-w-xs pr-2 text-xs leading-relaxed">
+              Outside of work, it&apos;s usually a walk with Joy, my golden
+              retriever — the reset that keeps the rest sustainable.
+            </p>
+          </motion.div>
+
           <Link
             href="/journey"
             className="text-brand group mt-2 inline-flex w-fit items-center gap-1.5 text-sm font-semibold"
           >
             Explore My Journey
             <ArrowRight
-              className="ease-out-quart size-4 transition-transform duration-200 group-hover:translate-x-1"
+              className="size-4 transition-transform duration-200 ease-out-quart group-hover:translate-x-1"
               aria-hidden
             />
           </Link>

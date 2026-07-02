@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Route } from "lucide-react";
 
 import { ComingSoon } from "@/components/common/coming-soon";
+import { conferencePhotos } from "@/lib/media";
 
 export const metadata: Metadata = {
   title: "Journey",
@@ -13,6 +14,7 @@ export default function JourneyPage() {
   return (
     <ComingSoon
       icon={Route}
+      banner={conferencePhotos[8]}
       title="The full career timeline is coming soon."
       description="A detailed walk through 16+ years scaling operations at Amazon, Reliance Retail, and IBO — the initiatives, the setbacks, and the lessons — is on its way."
     />
