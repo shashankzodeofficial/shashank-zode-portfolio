@@ -69,3 +69,11 @@ export interface KnowledgeArticlePreview {
   summary: string;
   tags: string[];
 }
+
+export interface MediaAsset {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  caption?: string;
+}

@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# raw source photography — optimized copies live in public/images
+/Professional Photo/
