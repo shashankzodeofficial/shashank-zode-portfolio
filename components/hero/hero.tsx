@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Download, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, Compass, Download, MapPin, Sparkles } from "lucide-react";
 
 import { HeroBackground } from "@/components/hero/hero-background";
 import { HeroStats } from "@/components/hero/hero-stats";
@@ -78,10 +78,10 @@ export function Hero() {
               size="lg"
               variant="brand"
               render={
-                <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
-                  Download Resume
-                  <Download data-icon="inline-end" aria-hidden />
-                </a>
+                <Link href="/journey">
+                  Explore My Journey
+                  <Compass data-icon="inline-end" aria-hidden />
+                </Link>
               }
             />
             <Button
@@ -97,7 +97,12 @@ export function Hero() {
             <Button
               size="lg"
               variant="ghost"
-              render={<Link href="/knowledge">Knowledge Hub</Link>}
+              render={
+                <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+                  Download Resume
+                  <Download data-icon="inline-end" aria-hidden />
+                </a>
+              }
             />
           </motion.div>
         </motion.div>
