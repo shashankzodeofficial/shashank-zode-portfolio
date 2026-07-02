@@ -31,7 +31,7 @@ export function KnowledgeCard({ article }: { article: KnowledgeArticlePreview })
       </div>
 
       <Link
-        href="/knowledge"
+        href={`/knowledge/${article.slug}`}
         className="text-brand group/link mt-1 inline-flex w-fit items-center gap-1.5 text-sm font-semibold"
       >
         Read Article

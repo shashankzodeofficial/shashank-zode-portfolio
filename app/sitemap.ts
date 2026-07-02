@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { articles } from "@/content/knowledge/articles";
 import { caseStudies } from "@/content/projects";
 import { siteConfig } from "@/lib/site-config";
 
@@ -20,12 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${siteConfig.url}/knowledge`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.6,
-    },
-    {
       url: `${siteConfig.url}/projects`,
       lastModified,
       changeFrequency: "weekly",
@@ -37,5 +32,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
+    {
+      url: `${siteConfig.url}/knowledge`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    ...articles.map((article) => ({
+      url: `${siteConfig.url}/knowledge/${article.slug}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    {
+      url: `${siteConfig.url}/knowledge/frameworks`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: `${siteConfig.url}/knowledge/ai-use-cases`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
   ];
 }

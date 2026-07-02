@@ -229,27 +229,30 @@ export const featuredProjects: FeaturedProject[] = [
 
 export const knowledgeArticlePreviews: KnowledgeArticlePreview[] = [
   {
-    category: "Supply Chain",
-    title: "What It Actually Takes to Launch 50 Stores in 12 Months",
+    slug: "zone-based-sortation-warehouse-throughput",
+    category: "Warehouse Operations",
+    title: "Zone-Based Sortation: A Practical Framework for Warehouse Throughput",
+    readingTime: "10 min",
+    summary:
+      "How a disciplined, safety-first sortation process turns chaotic package flow into predictable, measurable throughput.",
+    tags: ["Warehouse", "Sortation", "Lean"],
+  },
+  {
+    slug: "ai-in-supply-chain-decision-making",
+    category: "AI",
+    title: "AI in Supply Chain Decision-Making: Separating Signal from Hype",
+    readingTime: "10 min",
+    summary:
+      "A framework for deciding which operational decisions actually benefit from AI — before scoping the next pilot.",
+    tags: ["AI", "Decision Support", "Digital Transformation"],
+  },
+  {
+    slug: "leading-through-calculated-risk-peak-season",
+    category: "Leadership",
+    title: "Leading Through a Calculated Risk: Debottlenecking Ahead of Peak Season",
     readingTime: "9 min",
     summary:
-      "The network design, hiring, and vendor-onboarding sequence behind scaling a distribution footprint from 2 cities to 5 without breaking service levels.",
-    tags: ["Network Design", "Scaling", "Operations"],
-  },
-  {
-    category: "AI",
-    title: "Where AI Actually Helps in Supply Chain Planning",
-    readingTime: "11 min",
-    summary:
-      "A practitioner's view on which planning and decision problems are worth solving with AI — and which are still better solved with a well-designed dashboard.",
-    tags: ["AI", "Planning", "Product"],
-  },
-  {
-    category: "Leadership",
-    title: "Running a 90-Person Operations Team Without Losing the Ground Truth",
-    readingTime: "8 min",
-    summary:
-      "How structured scorecards, floor time, and clear ownership keep large operational teams aligned to the numbers that matter.",
-    tags: ["Leadership", "People", "Execution"],
+      "When the safest-looking option — leaving a constraint in place — is actually the riskiest choice once peak volume arrives.",
+    tags: ["Leadership", "Risk Management", "Peak Planning"],
   },
 ];
