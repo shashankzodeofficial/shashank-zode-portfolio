@@ -63,6 +63,7 @@ export interface FeaturedProject {
 }
 
 export interface KnowledgeArticlePreview {
+  slug: string;
   category: string;
   title: string;
   readingTime: string;

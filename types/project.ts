@@ -1,5 +1,30 @@
 import type { LucideIcon } from "lucide-react";
 
+import type {
+  ArchitectureDiagram,
+  ChallengeMitigation,
+  DownloadResource,
+  IconFeature,
+  ImpactPoint,
+  ImplementationPhase,
+  MetricItem,
+  RoadmapItem,
+} from "@/types/content";
+
+export type {
+  ArchitectureDiagram,
+  ChallengeMitigation,
+  DiagramNode,
+  DownloadResource,
+  IconFeature,
+  ImpactPoint,
+  ImplementationPhase,
+  RoadmapItem,
+} from "@/types/content";
+
+/** @deprecated shape now lives as MetricItem in types/content.ts; kept as an alias so existing imports don't churn. */
+export type ProjectKpi = MetricItem;
+
 export type ProjectCategory =
   | "AI Planning"
   | "Executive Dashboards"
@@ -8,67 +33,9 @@ export type ProjectCategory =
 
 export type ProjectStatus = "Live" | "In Production" | "Concept";
 
-export interface DiagramNode {
-  icon: LucideIcon;
-  label: string;
-  detail?: string;
-}
-
-/** A left-to-right (desktop) / top-to-bottom (mobile) flow diagram, data-driven. */
-export interface ArchitectureDiagram {
-  title: string;
-  description: string;
-  nodes: DiagramNode[];
-}
-
 export interface TechBadge {
   label: string;
   category: "Frontend" | "Backend" | "Data & AI" | "Platform";
-}
-
-export interface ImplementationPhase {
-  phase: string;
-  title: string;
-  description: string;
-}
-
-export interface IconFeature {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}
-
-export interface ImpactPoint {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}
-
-export interface ProjectKpi {
-  label: string;
-  value?: number;
-  prefix?: string;
-  suffix?: string;
-  display?: string;
-  description: string;
-}
-
-export interface ChallengeMitigation {
-  challenge: string;
-  mitigation: string;
-}
-
-export interface RoadmapItem {
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}
-
-export interface DownloadResource {
-  icon: LucideIcon;
-  label: string;
-  description: string;
-  href?: string;
 }
 
 /**
@@ -110,7 +77,7 @@ export interface CaseStudy {
   keyFeatures: IconFeature[];
   dashboardHighlights: string[];
   businessImpact: ImpactPoint[];
-  kpis: ProjectKpi[];
+  kpis: MetricItem[];
   challengesMitigation: ChallengeMitigation[];
   lessonsLearned: string[];
   futureRoadmap: RoadmapItem[];
