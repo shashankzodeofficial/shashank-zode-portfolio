@@ -4,6 +4,20 @@ import { articles } from "@/content/knowledge/articles";
 import { caseStudies } from "@/content/projects";
 import { siteConfig } from "@/lib/site-config";
 
+const aiLabsRoutes = [
+  "/ai-labs",
+  "/ai-labs/projects",
+  "/ai-labs/experiments",
+  "/ai-labs/prompts",
+  "/ai-labs/agents",
+  "/ai-labs/automation",
+  "/ai-labs/rag",
+  "/ai-labs/architecture",
+  "/ai-labs/llm-applications",
+  "/ai-labs/roadmap",
+  "/ai-labs/demos",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
@@ -56,5 +70,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    ...aiLabsRoutes.map((route) => ({
+      url: `${siteConfig.url}${route}`,
+      lastModified,
+      changeFrequency: "weekly" as const,
+      priority: route === "/ai-labs" ? 0.9 : 0.7,
+    })),
   ];
 }

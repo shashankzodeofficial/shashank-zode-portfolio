@@ -1,5 +1,6 @@
 import { Hero } from "@/components/hero/hero";
 import { AboutPreview } from "@/components/sections/about-preview";
+import { AILabsPreview } from "@/components/sections/ai-labs-preview";
 import { CoreExpertise } from "@/components/sections/core-expertise";
 import { CtaSection } from "@/components/sections/cta-section";
 import { ExecutiveMetrics } from "@/components/sections/executive-metrics";
@@ -17,6 +18,7 @@ export default function Home() {
       <LeadershipPhilosophy />
       <CoreExpertise />
       <ProjectsPreview />
+      <AILabsPreview />
       <KnowledgePreview />
       <FitnessPreview />
       <CtaSection />

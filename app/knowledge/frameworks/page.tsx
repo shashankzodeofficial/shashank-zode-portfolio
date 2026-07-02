@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Layers3 } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Layers3 } from "lucide-react";
 
 import { Breadcrumb } from "@/components/common/breadcrumb";
 import { SectionHeader } from "@/components/common/section-header";
@@ -46,6 +47,20 @@ export default function FrameworksPage() {
         <div className="border-border bg-brand-muted text-brand flex items-center gap-3 rounded-2xl border px-5 py-4 text-sm">
           <Layers3 className="size-4 shrink-0" aria-hidden />
           Every framework includes a visual step model and a downloadable placeholder — full toolkits are being prepared.
+        </div>
+
+        <div className="border-border bg-card shadow-subtle flex flex-wrap items-center justify-between gap-4 rounded-2xl border p-5">
+          <p className="text-sm">
+            See how these frameworks translate into system diagrams in the AI
+            Architecture Library.
+          </p>
+          <Link
+            href="/ai-labs/architecture"
+            className="text-brand group inline-flex items-center gap-1.5 text-sm font-semibold"
+          >
+            View Architecture Library
+            <ArrowRight className="ease-out-quart size-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden />
+          </Link>
         </div>
 
         <div className="flex flex-col gap-8">

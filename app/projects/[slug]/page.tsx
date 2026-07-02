@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArrowRight, Brain } from "lucide-react";
 
 import { ArchitectureDiagram } from "@/components/case-study/architecture-diagram";
 import { CaseStudyHero } from "@/components/case-study/case-study-hero";
@@ -109,6 +111,22 @@ export default async function CaseStudyPage({
       <TableOfContents items={tocItems} />
       <CaseStudyHero slug={study.slug} />
       <TechStackBadges badges={study.techBadges} />
+
+      <div className="container-executive">
+        <Link
+          href={`/ai-labs/projects#${study.slug}`}
+          className="border-border bg-card shadow-subtle hover:shadow-panel group flex flex-wrap items-center justify-between gap-4 rounded-2xl border p-5 transition-shadow"
+        >
+          <span className="flex items-center gap-3 text-sm">
+            <Brain className="text-brand size-4 shrink-0" aria-hidden />
+            See this project&apos;s AI technologies, live demo, and architecture in the AI Innovation Center
+          </span>
+          <span className="text-brand inline-flex items-center gap-1.5 text-sm font-semibold">
+            View in AI Labs
+            <ArrowRight className="ease-out-quart size-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden />
+          </span>
+        </Link>
+      </div>
 
       <div className="flex flex-col">
         <section
