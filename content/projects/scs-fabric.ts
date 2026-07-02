@@ -292,4 +292,12 @@ export const scsFabric: CaseStudy = {
     },
   ],
   relatedSlugs: ["nexusone", "transportation-control-tower"],
+  aiTechnologies: [
+    "AI Optimization Layer",
+    "Space Modeling Engine",
+    "Scenario Simulation",
+  ],
+  links: {
+    liveDemo: "https://scs-fabric-space-engine.vercel.app/demo",
+  },
 };

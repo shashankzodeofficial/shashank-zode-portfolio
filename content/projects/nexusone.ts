@@ -307,4 +307,12 @@ export const nexusone: CaseStudy = {
     },
   ],
   relatedSlugs: ["scs-fabric", "routesphere-control-tower"],
+  aiTechnologies: [
+    "AI-Assisted Demand Forecasting",
+    "Prompt Engineering",
+    "Scenario Optimization Modeling",
+  ],
+  links: {
+    liveDemo: "https://nexusone-ai.vercel.app/",
+  },
 };

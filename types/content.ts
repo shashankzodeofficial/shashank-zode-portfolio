@@ -63,3 +63,16 @@ export interface DownloadResource {
   description: string;
   href?: string;
 }
+
+/**
+ * External action links for a shipped product. Any field left undefined
+ * renders as an honest "Coming Soon" / "Available on Request" state rather
+ * than a broken or dead link.
+ */
+export interface ProjectLinks {
+  liveDemo?: string;
+  github?: string;
+  caseStudy?: string;
+  architecture?: string;
+  documentation?: string;
+}

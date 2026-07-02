@@ -283,4 +283,12 @@ export const routeSphereControlTower: CaseStudy = {
     },
   ],
   relatedSlugs: ["transportation-control-tower", "routesphere-delivery-app"],
+  aiTechnologies: [
+    "Automated Network Risk Scoring",
+    "Power BI Predictive Visuals",
+    "Rules-Based Exception Alerting",
+  ],
+  links: {
+    liveDemo: "https://routesphere-control-tower.vercel.app/attempt-rate",
+  },
 };

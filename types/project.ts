@@ -8,6 +8,7 @@ import type {
   ImpactPoint,
   ImplementationPhase,
   MetricItem,
+  ProjectLinks,
   RoadmapItem,
 } from "@/types/content";
 
@@ -19,6 +20,7 @@ export type {
   IconFeature,
   ImpactPoint,
   ImplementationPhase,
+  ProjectLinks,
   RoadmapItem,
 } from "@/types/content";
 
@@ -84,4 +86,7 @@ export interface CaseStudy {
   downloads: DownloadResource[];
   gallery: GalleryItem[];
   relatedSlugs: string[];
+  /** AI technologies specifically (a filtered view of techStack, called out for AI Labs). */
+  aiTechnologies: string[];
+  links: ProjectLinks;
 }

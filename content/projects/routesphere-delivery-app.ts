@@ -287,4 +287,12 @@ export const routeSphereDeliveryApp: CaseStudy = {
     },
   ],
   relatedSlugs: ["routesphere-control-tower", "transportation-control-tower"],
+  aiTechnologies: [
+    "Automated Workflow Engine",
+    "Real-Time Digital Tracking",
+    "Exception-Based Routing Logic",
+  ],
+  links: {
+    liveDemo: "https://drive.google.com/file/d/1MmXMOgGiYLDGSg3EG3EWVOJk0yKufhUl/view",
+  },
 };

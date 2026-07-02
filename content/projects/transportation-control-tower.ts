@@ -280,4 +280,12 @@ export const transportationControlTower: CaseStudy = {
     },
   ],
   relatedSlugs: ["routesphere-control-tower", "scs-fabric"],
+  aiTechnologies: [
+    "Automated Exception Detection",
+    "Power BI Predictive Analytics",
+    "Workflow Automation",
+  ],
+  links: {
+    liveDemo: "https://tct-shashank.vercel.app/executive",
+  },
 };
