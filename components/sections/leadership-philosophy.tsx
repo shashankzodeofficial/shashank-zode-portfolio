@@ -31,9 +31,7 @@ export function LeadershipPhilosophy() {
                 className="object-cover"
               />
             </div>
-            <p className="text-muted-foreground mt-2 text-xs">
-              {speakingPhoto.caption}
-            </p>
+            <p className="text-muted-foreground mt-2 text-xs">{speakingPhoto.caption}</p>
           </motion.div>
 
           <div className="flex flex-col gap-6">
@@ -43,9 +41,8 @@ export function LeadershipPhilosophy() {
               description="Nine principles, tested across three organizations and 16 years of building networks that scale."
             />
             <blockquote className="border-brand text-lead text-muted-foreground border-l-2 pl-5 leading-[var(--text-lead--line-height)] italic">
-              &ldquo;The best supply chains are the ones nobody notices —
-              because every failure mode was designed out before it ever
-              happened.&rdquo;
+              &ldquo;The best supply chains are the ones nobody notices — because every
+              failure mode was designed out before it ever happened.&rdquo;
             </blockquote>
           </div>
         </div>
@@ -57,7 +54,11 @@ export function LeadershipPhilosophy() {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10% 0px" }}
-              transition={{ duration: 0.5, delay: (i % 3) * 0.08, ease: [0.16, 1, 0.3, 1] }}
+              transition={{
+                duration: 0.5,
+                delay: (i % 3) * 0.08,
+                ease: [0.16, 1, 0.3, 1],
+              }}
             >
               <FeatureCard
                 icon={principle.icon}
