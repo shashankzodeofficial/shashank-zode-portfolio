@@ -77,3 +77,66 @@ export interface MediaAsset {
   height: number;
   caption?: string;
 }
+
+export interface LeadershipStage {
+  icon: LucideIcon;
+  stage: string;
+  title: string;
+  description: string;
+  keyLearning: string;
+}
+
+export interface CareerTimelineEntry {
+  period: string;
+  role: string;
+  organization: string;
+  stage: string;
+  challenge: string;
+  transformation: string;
+  lesson: string;
+  impact: string;
+}
+
+export interface CareerMilestone {
+  icon: LucideIcon;
+  title: string;
+  achievement: string;
+  significance: string;
+  lesson: string;
+}
+
+export interface BusinessChallenge {
+  icon: LucideIcon;
+  title: string;
+  situation: string;
+  approach: string;
+  outcome: string;
+  takeaway: string;
+}
+
+export interface Certification {
+  name: string;
+  issuer: string;
+  year: string;
+  status: "verified" | "upcoming";
+  credentialLabel?: string;
+}
+
+export interface AwardEntry {
+  title: string;
+  issuer: string;
+  period: string;
+  description: string;
+  status: "verified" | "upcoming";
+}
+
+export interface IconLabel {
+  icon: LucideIcon;
+  label: string;
+}
+
+export interface PersonalInterest {
+  icon: LucideIcon;
+  label: string;
+  connection: string;
+}
