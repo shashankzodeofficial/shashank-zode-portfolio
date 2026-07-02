@@ -66,11 +66,10 @@ export function Hero() {
               variants={fadeUp}
               className="text-subtitle text-muted-foreground max-w-2xl leading-[var(--text-subtitle--line-height)]"
             >
-              Supply chain executive with 16+ years scaling logistics networks
-              across Amazon, Reliance Retail, and IBO — owning multi-million
-              dollar P&amp;Ls, architecting AI-powered planning platforms, and
-              turning operational complexity into compounding business
-              advantage.
+              Supply chain executive with 16+ years scaling logistics networks across
+              Amazon, Reliance Retail, and IBO — owning multi-million dollar P&amp;Ls,
+              architecting AI-powered planning platforms, and turning operational
+              complexity into compounding business advantage.
             </motion.p>
 
             <motion.div
@@ -82,7 +81,7 @@ export function Hero() {
                 size="lg"
                 variant="brand"
                 render={
-                  <Link href="/journey">
+                  <Link href="/about">
                     Explore My Journey
                     <Compass data-icon="inline-end" aria-hidden />
                   </Link>
@@ -129,9 +128,7 @@ export function Hero() {
               <div className="from-primary/50 absolute inset-0 bg-gradient-to-t via-transparent to-transparent" />
             </div>
             <div className="border-border bg-card shadow-panel absolute -bottom-5 -left-5 hidden rounded-2xl border px-4 py-3 sm:block">
-              <p className="text-sm font-semibold tracking-tight">
-                {siteConfig.name}
-              </p>
+              <p className="text-sm font-semibold tracking-tight">{siteConfig.name}</p>
               <p className="text-muted-foreground text-xs">{siteConfig.role}</p>
             </div>
           </motion.div>

@@ -17,8 +17,8 @@ export const siteConfig: SiteConfig = {
  */
 export const navItems: NavItem[] = [
   { label: "Home", href: "/", status: "live" },
-  { label: "About", href: "/#about", status: "live" },
-  { label: "Journey", href: "/journey", status: "upcoming" },
+  { label: "About", href: "/about", status: "live" },
+  { label: "Journey", href: "/about#timeline", status: "live" },
   { label: "Projects", href: "/#projects", status: "live" },
   { label: "Knowledge Hub", href: "/knowledge", status: "upcoming" },
   { label: "Leadership", href: "/#leadership", status: "live" },
@@ -38,6 +38,21 @@ export const sectionAnchors = [
   "knowledge",
   "fitness",
   "contact",
+] as const;
+
+/** Section ids on the /about page, in order — powers the sticky sidebar nav. */
+export const aboutSectionAnchors = [
+  { id: "story", label: "My Story" },
+  { id: "evolution", label: "Leadership Evolution" },
+  { id: "timeline", label: "Career Timeline" },
+  { id: "milestones", label: "Career Milestones" },
+  { id: "challenges", label: "Business Challenges" },
+  { id: "philosophy", label: "Executive Philosophy" },
+  { id: "highlights", label: "Career Highlights" },
+  { id: "certifications", label: "Certifications" },
+  { id: "awards", label: "Awards & Recognition" },
+  { id: "values", label: "Professional Values" },
+  { id: "interests", label: "Personal Interests" },
 ] as const;
 
 /** Figures sourced directly from the CV — no placeholder numbers. */

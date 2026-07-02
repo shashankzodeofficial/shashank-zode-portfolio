@@ -27,13 +27,12 @@ export function FitnessPreview() {
             description={`A ${fitnessJourney.startWeight}${fitnessJourney.unit} to ${fitnessJourney.currentWeight}${fitnessJourney.unit} transformation, built one non-negotiable morning at a time — the same consistency I bring to running operations.`}
           />
           <p className="text-muted-foreground max-w-lg text-sm leading-relaxed">
-            No shortcuts, no crash programs — just structured, compounding
-            effort over years. It&apos;s the clearest personal proof I have
-            that consistency beats intensity, in the gym and in the
-            boardroom.
+            No shortcuts, no crash programs — just structured, compounding effort over
+            years. It&apos;s the clearest personal proof I have that consistency beats
+            intensity, in the gym and in the boardroom.
           </p>
           <Link
-            href="/journey"
+            href="/about#timeline"
             className="text-brand group mt-1 inline-flex w-fit items-center gap-1.5 text-sm font-semibold"
           >
             Read My Journey

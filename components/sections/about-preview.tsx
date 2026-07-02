@@ -55,18 +55,18 @@ export function AboutPreview() {
               />
             </div>
             <p className="text-muted-foreground max-w-xs pr-2 text-xs leading-relaxed">
-              Outside of work, it&apos;s usually a walk with Joy, my golden
-              retriever — the reset that keeps the rest sustainable.
+              Outside of work, it&apos;s usually a walk with Joy, my golden retriever —
+              the reset that keeps the rest sustainable.
             </p>
           </motion.div>
 
           <Link
-            href="/journey"
+            href="/about"
             className="text-brand group mt-2 inline-flex w-fit items-center gap-1.5 text-sm font-semibold"
           >
-            Explore My Journey
+            Read My Full Story
             <ArrowRight
-              className="size-4 transition-transform duration-200 ease-out-quart group-hover:translate-x-1"
+              className="ease-out-quart size-4 transition-transform duration-200 group-hover:translate-x-1"
               aria-hidden
             />
           </Link>

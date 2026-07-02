@@ -7,6 +7,15 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/journey",
+        destination: "/about#timeline",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 const withMDX = createMDX({});

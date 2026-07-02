@@ -36,7 +36,8 @@ export function Header() {
       return pathname === "/" && activeSectionId === "top";
     }
     if (href.endsWith(".pdf")) return false;
-    return pathname === href;
+    const [hrefPath] = href.split("#");
+    return pathname === hrefPath;
   };
 
   return (
