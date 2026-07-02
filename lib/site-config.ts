@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
 export const navItems: NavItem[] = [
   { label: "Home", href: "/", status: "live" },
   { label: "About", href: "/#about", status: "live" },
-  { label: "Journey", href: "/#journey", status: "live" },
+  { label: "Journey", href: "/journey", status: "upcoming" },
   { label: "Projects", href: "/#projects", status: "live" },
   { label: "Knowledge Hub", href: "/knowledge", status: "upcoming" },
   { label: "Leadership", href: "/#leadership", status: "live" },
@@ -26,6 +26,19 @@ export const navItems: NavItem[] = [
   { label: "Resume", href: "/resume/Shashank-Zode-Resume.pdf", status: "live" },
   { label: "Contact", href: "/#contact", status: "live" },
 ];
+
+/** Section ids in homepage order, used for scroll-spy active-link highlighting. */
+export const sectionAnchors = [
+  "top",
+  "metrics",
+  "about",
+  "leadership",
+  "expertise",
+  "projects",
+  "knowledge",
+  "fitness",
+  "contact",
+] as const;
 
 /** Figures sourced directly from the CV — no placeholder numbers. */
 export const heroStats: HeroStat[] = [
@@ -47,3 +60,16 @@ export const heroStats: HeroStat[] = [
 ];
 
 export const resumeUrl = "/resume/Shashank-Zode-Resume.pdf";
+
+export const contactMailto = `mailto:${siteConfig.email}`;
+export const scheduleMailto = `mailto:${siteConfig.email}?subject=${encodeURIComponent(
+  "Schedule a conversation",
+)}`;
+
+export const fitnessJourney = {
+  startWeight: 125,
+  currentWeight: 85,
+  unit: "kg",
+  streakYears: "4+",
+  frequency: "5x/week",
+};

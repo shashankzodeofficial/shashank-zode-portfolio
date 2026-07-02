@@ -31,3 +31,41 @@ export interface SiteConfig {
   linkedin: string;
   url: string;
 }
+
+export interface ExecutiveMetric {
+  value: number;
+  prefix?: string;
+  suffix?: string;
+  label: string;
+  detail: string;
+}
+
+export interface LeadershipPrinciple {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
+
+export interface ExpertiseArea {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  impact: string;
+}
+
+export interface FeaturedProject {
+  slug: string;
+  title: string;
+  summary: string;
+  badges: string[];
+  value: string;
+  icon: LucideIcon;
+}
+
+export interface KnowledgeArticlePreview {
+  category: string;
+  title: string;
+  readingTime: string;
+  summary: string;
+  tags: string[];
+}
