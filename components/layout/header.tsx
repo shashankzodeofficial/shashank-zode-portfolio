@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { MobileMenu } from "@/components/navigation/mobile-menu";
 import { NavLink } from "@/components/navigation/nav-link";
 import { ScrollProgress } from "@/components/navigation/scroll-progress";
+import { SearchTriggerButton, SearchTriggerIconButton } from "@/components/search/search-trigger-button";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { useActiveSection } from "@/hooks/use-active-section";
@@ -68,6 +69,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
+          <SearchTriggerButton />
           <ThemeToggle />
           {contactItem ? (
             <Button
@@ -78,7 +80,10 @@ export function Header() {
           ) : null}
         </div>
 
-        <MobileMenu items={navItems} />
+        <div className="flex items-center gap-2 md:hidden">
+          <SearchTriggerIconButton />
+          <MobileMenu items={navItems} />
+        </div>
       </div>
 
       <ScrollProgress />
