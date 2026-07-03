@@ -24,8 +24,8 @@ export const navItems: NavItem[] = [
   { label: "Knowledge Hub", href: "/knowledge", status: "live" },
   { label: "Thought Leadership", href: "/thought-leadership", status: "live" },
   { label: "Fitness", href: "/fitness", status: "live" },
-  { label: "Resume", href: "/resume/Shashank-Zode-Resume.pdf", status: "live" },
-  { label: "Contact", href: "/#contact", status: "live" },
+  { label: "For Recruiters", href: "/recruiters", status: "live" },
+  { label: "Contact", href: "/recruiters#contact", status: "live" },
 ];
 
 /** Section ids in homepage order, used for scroll-spy active-link highlighting. */

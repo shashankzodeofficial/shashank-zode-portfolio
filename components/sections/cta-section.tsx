@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { BookOpen, CalendarClock, Download, Mail } from "lucide-react";
+import { Briefcase, CalendarClock, Download, Mail } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { contactMailto, resumeUrl, scheduleMailto, siteConfig } from "@/lib/site-config";
@@ -66,9 +66,9 @@ export function CtaSection() {
               variant="ghost"
               className="text-primary-foreground hover:bg-primary-foreground/10"
               render={
-                <Link href="/knowledge">
-                  View Knowledge Hub
-                  <BookOpen data-icon="inline-end" aria-hidden />
+                <Link href="/recruiters">
+                  For Recruiters
+                  <Briefcase data-icon="inline-end" aria-hidden />
                 </Link>
               }
             />
