@@ -94,5 +94,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: route === "/thought-leadership" ? 0.9 : 0.7,
     })),
+    {
+      url: `${siteConfig.url}/fitness`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
   ];
 }

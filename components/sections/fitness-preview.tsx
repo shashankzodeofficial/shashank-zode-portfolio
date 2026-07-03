@@ -32,7 +32,7 @@ export function FitnessPreview() {
             intensity, in the gym and in the boardroom.
           </p>
           <Link
-            href="/about#timeline"
+            href="/fitness"
             className="text-brand group mt-1 inline-flex w-fit items-center gap-1.5 text-sm font-semibold"
           >
             Read My Journey

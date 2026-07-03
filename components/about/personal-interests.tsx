@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 import { SectionHeader } from "@/components/common/section-header";
 import { personalInterests } from "@/lib/about-content";
@@ -56,6 +58,18 @@ export function PersonalInterests() {
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   {interest.connection}
                 </p>
+                {interest.label === "Fitness" ? (
+                  <Link
+                    href="/fitness"
+                    className="text-brand group/link mt-1 inline-flex w-fit items-center gap-1 text-xs font-semibold"
+                  >
+                    Read the full journey
+                    <ArrowRight
+                      className="size-3 transition-transform duration-200 group-hover/link:translate-x-0.5"
+                      aria-hidden
+                    />
+                  </Link>
+                ) : null}
               </div>
             </motion.div>
           ))}
