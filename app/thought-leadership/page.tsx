@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { NewsletterPlaceholder } from "@/components/knowledge/newsletter-placeholder";
 import { ExecutiveHero } from "@/components/thought-leadership/executive-hero";
+import { ExecutivePresenceBanner } from "@/components/thought-leadership/executive-presence-banner";
 import { ExecutiveQuotesShowcase } from "@/components/thought-leadership/executive-quotes-showcase";
 import { FeaturedInsights } from "@/components/thought-leadership/featured-insights";
 import { FutureTrendsTeaser } from "@/components/thought-leadership/future-trends-teaser";
@@ -51,6 +52,7 @@ export default function ThoughtLeadershipPage() {
       <LeadershipPhilosophyTeaser />
       <FeaturedInsights />
       <SpeakingHighlights />
+      <ExecutivePresenceBanner />
       <LatestArticles />
       <MediaCoverageTeaser />
       <ExecutiveQuotesShowcase limit={3} />
