@@ -22,7 +22,7 @@ export function AwardsRecognition() {
             alt={awardsPhoto.alt}
             fill
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-[center_40%]"
           />
           <div className="from-primary/85 via-primary/20 absolute inset-0 bg-gradient-to-t to-transparent" />
           <p className="text-primary-foreground/80 absolute bottom-4 left-5 text-xs font-medium">
