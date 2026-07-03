@@ -27,7 +27,7 @@ export const reducingNetworkComplexity: Article = {
   title: "Reducing Network Complexity: A Playbook for Eliminating Redundant Connections",
   subtitle:
     "The unglamorous work of finding and removing orphaned hops in a logistics network — and why it quietly compounds into major savings.",
-  category: ["Supply Chain", "Logistics", "Operations Excellence"],
+  category: ["Supply Chain", "Logistics", "Operations Excellence", "Supply Chain Strategy"],
   tags: ["Network Design", "Loss Prevention", "Optimization", "Cost Reduction"],
   readingTime: "11 min",
   difficulty: "Advanced",

@@ -22,7 +22,7 @@ export const aiInSupplyChainDecisionMaking: Article = {
   title: "AI in Supply Chain Decision-Making: Separating Signal from Hype",
   subtitle:
     "A framework for deciding which operational decisions actually benefit from AI — before scoping the next pilot.",
-  category: ["AI", "Supply Chain", "Digital Transformation"],
+  category: ["AI", "Supply Chain", "Digital Transformation", "AI Leadership"],
   tags: ["AI", "Decision Support", "Forecasting Models", "Digital Transformation"],
   readingTime: "10 min",
   difficulty: "Intermediate",

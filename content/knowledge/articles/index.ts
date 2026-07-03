@@ -1,5 +1,8 @@
 import { aiInSupplyChainDecisionMaking } from "@/content/knowledge/articles/ai-in-supply-chain-decision-making";
+import { customerExperienceOperationsMetric } from "@/content/knowledge/articles/customer-experience-operations-metric";
+import { digitalStrategySequencing } from "@/content/knowledge/articles/digital-strategy-sequencing";
 import { insourcingVsThirdPartyLogistics } from "@/content/knowledge/articles/insourcing-vs-third-party-logistics";
+import { leadingOrganizationalChange } from "@/content/knowledge/articles/leading-organizational-change";
 import { leadingThroughCalculatedRisk } from "@/content/knowledge/articles/leading-through-calculated-risk-peak-season";
 import { promptEngineeringForOperationsLeaders } from "@/content/knowledge/articles/prompt-engineering-for-operations-leaders";
 import { reducingNetworkComplexity } from "@/content/knowledge/articles/reducing-network-complexity";
@@ -13,6 +16,9 @@ export const articles: Article[] = [
   leadingThroughCalculatedRisk,
   aiInSupplyChainDecisionMaking,
   promptEngineeringForOperationsLeaders,
+  leadingOrganizationalChange,
+  digitalStrategySequencing,
+  customerExperienceOperationsMetric,
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {

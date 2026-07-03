@@ -22,7 +22,7 @@ export const leadingThroughCalculatedRisk: Article = {
   title: "Leading Through a Calculated Risk: Debottlenecking Ahead of Peak Season",
   subtitle:
     "When the safest-looking option — leaving a constraint in place — is actually the riskiest choice once peak volume arrives.",
-  category: ["Leadership", "Operations Excellence"],
+  category: ["Leadership", "Operations Excellence", "Executive Leadership"],
   tags: ["Executive Leadership", "Risk Management", "Peak Planning", "Decision Making"],
   readingTime: "9 min",
   difficulty: "Advanced",
