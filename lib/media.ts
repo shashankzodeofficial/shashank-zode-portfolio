@@ -117,6 +117,15 @@ export const fitnessCertificates: MediaAsset[] = [
   },
 ];
 
+/** KPMG Lean Six Sigma Green Belt certificate, issued to Shashank Parshuram Zode, 12–15 March 2020. */
+export const leanSixSigmaCertificate: MediaAsset = {
+  src: "/images/certifications/lean-six-sigma-certification.webp",
+  alt: "Lean Six Sigma Green Belt certification issued by KPMG in India to Shashank Parshuram Zode, 12-15 March 2020",
+  width: 1533,
+  height: 1130,
+  caption: "Lean Six Sigma Green Belt · KPMG in India · March 2020",
+};
+
 export const joyPhoto: MediaAsset = {
   src: "/images/personal/personal-joy.webp",
   alt: "Shashank Zode with his golden retriever, Joy",
