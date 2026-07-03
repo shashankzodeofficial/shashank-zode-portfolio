@@ -2,10 +2,14 @@ import Link from "next/link";
 import {
   Bot,
   Brain,
+  Compass,
   Cpu,
   Gauge,
+  Handshake,
+  Lightbulb,
   LineChart,
   Network,
+  RefreshCw,
   Target,
   Users,
   Wand2,
@@ -29,6 +33,15 @@ const categoryIcons: Record<KnowledgeCategory, LucideIcon> = {
   "Digital Transformation": Cpu,
   "Operations Excellence": Target,
   "Prompt Engineering": Wand2,
+  "Executive Leadership": Compass,
+  "Supply Chain Strategy": Network,
+  "AI Leadership": Brain,
+  "Business Transformation": Cpu,
+  "Customer Experience": Handshake,
+  Innovation: Lightbulb,
+  "Digital Strategy": Cpu,
+  "Organizational Change": RefreshCw,
+  "Continuous Improvement": RefreshCw,
 };
 
 export function CategoryCards() {

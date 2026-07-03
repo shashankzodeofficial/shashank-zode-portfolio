@@ -22,7 +22,16 @@ export type KnowledgeCategory =
   | "Analytics"
   | "Digital Transformation"
   | "Operations Excellence"
-  | "Prompt Engineering";
+  | "Prompt Engineering"
+  | "Executive Leadership"
+  | "Supply Chain Strategy"
+  | "AI Leadership"
+  | "Business Transformation"
+  | "Customer Experience"
+  | "Innovation"
+  | "Digital Strategy"
+  | "Organizational Change"
+  | "Continuous Improvement";
 
 export type Difficulty = "Foundational" | "Intermediate" | "Advanced";
 
