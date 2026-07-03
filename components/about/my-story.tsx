@@ -3,17 +3,17 @@
 import { motion } from "framer-motion";
 
 import { SectionHeader } from "@/components/common/section-header";
+import { SupplyChainNetwork } from "@/components/illustrations/supply-chain-network";
 import { myStory } from "@/lib/about-content";
 
 export function MyStory() {
   return (
     <section id="story" className="border-border scroll-mt-24 border-t py-20 sm:py-28">
       <div className="container-executive grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,20rem)_1fr] lg:gap-16">
-        <SectionHeader
-          eyebrow="My Story"
-          title="Why supply chain, and why now"
-          className="lg:sticky lg:top-28 lg:self-start"
-        />
+        <div className="flex flex-col gap-8 lg:sticky lg:top-28 lg:self-start">
+          <SectionHeader eyebrow="My Story" title="Why supply chain, and why now" />
+          <SupplyChainNetwork className="hidden lg:block" />
+        </div>
 
         <div className="flex flex-col gap-10">
           {myStory.map((block, i) => (

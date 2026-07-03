@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { CertificationsAwards } from "@/components/recruiters/certifications-awards";
+import { DecisionSupportShowcase } from "@/components/recruiters/decision-support-showcase";
 import { ExecutiveSummary } from "@/components/recruiters/executive-summary";
 import { ProfessionalContact } from "@/components/recruiters/professional-contact";
 import { RecruiterFaq } from "@/components/recruiters/recruiter-faq";
@@ -50,6 +51,7 @@ export default function RecruitersPage() {
       />
       <RecruiterHero />
       <ExecutiveSummary />
+      <DecisionSupportShowcase />
       <ResumeViewer />
       <CertificationsAwards />
       <SkillsMatrix />

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Bot, FlaskConical, Rocket, Wand2 } from "lucide-react";
 
 import { SectionHeader } from "@/components/common/section-header";
+import { AiArchitectureDiagram } from "@/components/illustrations/ai-architecture-diagram";
 import { aiAgents } from "@/content/ai-labs/agents";
 import { aiExperiments } from "@/content/ai-labs/experiments";
 import { prompts } from "@/content/ai-labs/prompts";
@@ -88,6 +89,19 @@ export function AILabsPreview() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-10% 0px" }}
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col gap-4"
+        >
+          <p className="text-muted-foreground text-sm font-medium">
+            How the AI actually works, end to end:
+          </p>
+          <AiArchitectureDiagram />
+        </motion.div>
       </div>
     </section>
   );

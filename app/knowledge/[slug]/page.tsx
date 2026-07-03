@@ -12,6 +12,7 @@ import { LessonsLearned } from "@/components/case-study/lessons-learned";
 import { TableOfContents } from "@/components/case-study/table-of-contents";
 import { Callout } from "@/components/common/callout";
 import { SectionHeader } from "@/components/common/section-header";
+import { WarehouseZoneDiagram } from "@/components/illustrations/warehouse-zone-diagram";
 import { ArticleHero } from "@/components/knowledge/article-hero";
 import { ArticleNav } from "@/components/knowledge/article-nav";
 import { ExecutiveSummary } from "@/components/knowledge/executive-summary";
@@ -135,6 +136,9 @@ export default async function ArticlePage({
           <div className="container-executive flex flex-col gap-12">
             <SectionHeader eyebrow="Recommended Framework" title="A structured approach" />
             <ArchitectureDiagram diagram={article.recommendedFramework} />
+            {article.slug === "zone-based-sortation-warehouse-throughput" ? (
+              <WarehouseZoneDiagram />
+            ) : null}
             <div className="flex flex-col gap-6">
               <h3 className="text-title font-semibold tracking-[var(--text-title--letter-spacing)]">
                 AI &amp; Technology Enablement
