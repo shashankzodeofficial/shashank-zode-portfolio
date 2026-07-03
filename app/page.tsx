@@ -8,6 +8,7 @@ import { FitnessPreview } from "@/components/sections/fitness-preview";
 import { KnowledgePreview } from "@/components/sections/knowledge-preview";
 import { LeadershipPhilosophy } from "@/components/sections/leadership-philosophy";
 import { ProjectsPreview } from "@/components/sections/projects-preview";
+import { ThoughtLeadershipPreview } from "@/components/sections/thought-leadership-preview";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <CoreExpertise />
       <ProjectsPreview />
       <AILabsPreview />
+      <ThoughtLeadershipPreview />
       <KnowledgePreview />
       <FitnessPreview />
       <CtaSection />

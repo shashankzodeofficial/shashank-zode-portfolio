@@ -18,6 +18,18 @@ const aiLabsRoutes = [
   "/ai-labs/demos",
 ];
 
+const thoughtLeadershipRoutes = [
+  "/thought-leadership",
+  "/thought-leadership/insights",
+  "/thought-leadership/principles",
+  "/thought-leadership/speaking",
+  "/thought-leadership/publications",
+  "/thought-leadership/interviews",
+  "/thought-leadership/quotes",
+  "/thought-leadership/trends",
+  "/thought-leadership/media",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
@@ -75,6 +87,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly" as const,
       priority: route === "/ai-labs" ? 0.9 : 0.7,
+    })),
+    ...thoughtLeadershipRoutes.map((route) => ({
+      url: `${siteConfig.url}${route}`,
+      lastModified,
+      changeFrequency: "weekly" as const,
+      priority: route === "/thought-leadership" ? 0.9 : 0.7,
     })),
   ];
 }

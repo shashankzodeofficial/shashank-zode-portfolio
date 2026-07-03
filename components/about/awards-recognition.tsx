@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { Award, Clock } from "lucide-react";
+import { ArrowRight, Award, Clock, Mic } from "lucide-react";
 
 import { SectionHeader } from "@/components/common/section-header";
 import { awards } from "@/lib/about-content";
@@ -82,6 +83,15 @@ export function AwardsRecognition() {
             );
           })}
         </ol>
+
+        <Link
+          href="/thought-leadership/speaking"
+          className="text-brand group inline-flex w-fit items-center gap-1.5 text-sm font-semibold"
+        >
+          <Mic className="size-4" aria-hidden />
+          View speaking topics &amp; conference participation
+          <ArrowRight className="ease-out-quart size-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden />
+        </Link>
       </div>
     </section>
   );
