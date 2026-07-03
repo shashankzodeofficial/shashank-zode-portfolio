@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { MotionConfig } from "framer-motion";
 
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { PageTransition } from "@/components/motion/page-transition";
 import { CommandPalette } from "@/components/search/command-palette";
 import { PageViewTracker } from "@/components/search/page-view-tracker";
 import { SearchProvider } from "@/components/search/search-provider";
@@ -117,19 +119,23 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SearchProvider>
-            <a
-              href="#top"
-              className="focus:bg-brand focus:text-brand-foreground sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:px-4 focus:py-2 focus:text-sm"
-            >
-              Skip to content
-            </a>
-            <PageViewTracker />
-            <CommandPalette />
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </SearchProvider>
+          <MotionConfig reducedMotion="user">
+            <SearchProvider>
+              <a
+                href="#top"
+                className="focus:bg-brand focus:text-brand-foreground sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-full focus:px-4 focus:py-2 focus:text-sm"
+              >
+                Skip to content
+              </a>
+              <PageViewTracker />
+              <CommandPalette />
+              <Header />
+              <main className="flex-1">
+                <PageTransition>{children}</PageTransition>
+              </main>
+              <Footer />
+            </SearchProvider>
+          </MotionConfig>
         </ThemeProvider>
       </body>
     </html>
