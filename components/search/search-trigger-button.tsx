@@ -14,6 +14,12 @@ function useIsMac() {
   return isMac;
 }
 
+/**
+ * Compact, icon-only search trigger — used at every breakpoint so it sits
+ * quietly alongside the theme toggle instead of competing with nav links or
+ * the primary CTA. The keyboard shortcut still works globally; it's surfaced
+ * here only as a native tooltip, not as inline text.
+ */
 export function SearchTriggerButton({ className }: { className?: string }) {
   const { setOpen } = useSearchPalette();
   const isMac = useIsMac();
@@ -23,30 +29,9 @@ export function SearchTriggerButton({ className }: { className?: string }) {
       type="button"
       onClick={() => setOpen(true)}
       aria-label="Search the site"
+      title={`Search (${isMac ? "⌘K" : "Ctrl K"})`}
       className={cn(
-        "border-border bg-surface text-muted-foreground hover:border-brand/30 hover:text-foreground focus-visible:outline-brand hidden items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 sm:inline-flex",
-        className,
-      )}
-    >
-      <Search className="size-3.5" aria-hidden />
-      <span>Search</span>
-      <kbd className="border-border bg-card ml-1 rounded border px-1.5 py-0.5 font-sans text-[0.65rem]">
-        {isMac ? "⌘K" : "Ctrl K"}
-      </kbd>
-    </button>
-  );
-}
-
-export function SearchTriggerIconButton({ className }: { className?: string }) {
-  const { setOpen } = useSearchPalette();
-
-  return (
-    <button
-      type="button"
-      onClick={() => setOpen(true)}
-      aria-label="Search the site"
-      className={cn(
-        "border-border bg-surface text-muted-foreground hover:text-foreground focus-visible:outline-brand flex size-9 items-center justify-center rounded-full border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 sm:hidden",
+        "border-border bg-secondary/60 text-foreground hover:bg-secondary focus-visible:outline-brand inline-flex size-9 shrink-0 items-center justify-center rounded-full border transition-colors focus-visible:outline-2 focus-visible:outline-offset-2",
         className,
       )}
     >
