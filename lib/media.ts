@@ -99,6 +99,24 @@ export const fitnessPhotos: MediaAsset[] = [
   },
 ];
 
+/** CPD-accredited certificates, both issued in the name Shashank Zode, Accredited Provider #776938. */
+export const fitnessCertificates: MediaAsset[] = [
+  {
+    src: "/images/certifications/personal-fitness-coach-certificate.webp",
+    alt: "Personal Fitness Coach certificate of completion, awarded to Shashank Zode, CPD accredited online course #1008742, 10 CPD credits",
+    width: 1426,
+    height: 1103,
+    caption: "Personal Fitness Coach · CPD Accredited Course #1008742",
+  },
+  {
+    src: "/images/certifications/diet-nutrition-coach-certificate.webp",
+    alt: "Diet & Nutrition Coach certificate of completion, awarded to Shashank Zode, CPD accredited online course #1000658, 10 CPD credits",
+    width: 1056,
+    height: 816,
+    caption: "Diet & Nutrition Coach · CPD Accredited Course #1000658",
+  },
+];
+
 export const joyPhoto: MediaAsset = {
   src: "/images/personal/personal-joy.webp",
   alt: "Shashank Zode with his golden retriever, Joy",

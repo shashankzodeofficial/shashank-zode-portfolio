@@ -23,7 +23,7 @@ export const navItems: NavItem[] = [
   { label: "AI Labs", href: "/ai-labs", status: "live" },
   { label: "Knowledge Hub", href: "/knowledge", status: "live" },
   { label: "Thought Leadership", href: "/thought-leadership", status: "live" },
-  { label: "Fitness", href: "/#fitness", status: "live" },
+  { label: "Fitness", href: "/fitness", status: "live" },
   { label: "Resume", href: "/resume/Shashank-Zode-Resume.pdf", status: "live" },
   { label: "Contact", href: "/#contact", status: "live" },
 ];
@@ -88,6 +88,7 @@ export const fitnessJourney = {
   startWeight: 125,
   currentWeight: 85,
   unit: "kg",
+  transformationMonths: 10,
   streakYears: "4+",
   frequency: "5x/week",
 };
